@@ -1,0 +1,938 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 992px) {
+  .nav_box {
+    justify-content: start !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .eight_img {
+    position: static !important;
+  }
+
+  .eight_img .img_one {
+    width: 100% !important;
+  }
+
+  .eight_img .img_two {
+    position: static !important;
+    width: 100% !important;
+  }
+}
+
+header nav {
+  position: fixed !important;
+  z-index: 3;
+  background-color: white;
+}
+
+header nav .nav_box {
+  display: flex;
+  justify-content: end;
+}
+
+header nav .nav_box ul .nav_txt a {
+  font-size: 85%;
+  color: rgb(73, 76, 81);
+  border-bottom: 2px solid transparent;
+  transition: all 2s, border-bottom 0.5s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+header nav .nav_box ul .nav_txt:hover a {
+  border-bottom-color: rgb(110, 129, 251);
+}
+
+header nav .nav_box ul .nav_txt:active {
+  border-bottom-color: rgb(110, 129, 251);
+}
+
+header nav .nav_box ul .nav_icon a {
+  font-size: 95%;
+  color: rgb(73, 76, 81);
+  border-bottom: 2px solid transparent;
+  transition: all 2s, border-bottom 0.5s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+header nav .nav_box ul .nav_icon:hover a span i {
+  border: none !important;
+  color: rgb(110, 129, 251);
+}
+
+header .header_box {
+  height: 600px;
+  width: 100%;
+}
+
+header .header_box .header_img {
+  position: relative !important;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: url("images/BANNER.jpg") center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .header_box .header_img .lh-1 {
+  line-height: 1.5 !important;
+}
+
+header .header_box .header_img .btn-box {
+  width: 160px;
+  height: 40px;
+  position: relative;
+}
+
+header .header_box .header_img .btn-box .button-1 {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(110, 129, 251);
+  color: rgb(236, 237, 239);
+  border-radius: 0;
+  transition: all 0.5s;
+  font-size: 12px;
+}
+
+header .header_box .header_img .btn-box .button-1:hover {
+  background-color: transparent;
+}
+
+header .header_box .header_img .btn-box .button-1:hover+.btn-overlay .child-box-overlay .btn-overlay-box-1,
+header .header_box .header_img .btn-box .button-1:hover+.btn-overlay .child-box-overlay .btn-overlay-box-2 {
+  height: 100%;
+  width: 50%;
+}
+
+header .header_box .header_img .btn-box .btn-overlay {
+  top: 0;
+  position: absolute;
+  z-index: -3;
+  width: 100%;
+  height: 100%;
+}
+
+header .header_box .header_img .btn-box .btn-overlay .child-box-overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  z-index: -2;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+header .header_box .header_img .btn-box .btn-overlay .child-box-overlay .btn-overlay-box-1 {
+  position: absolute;
+  right: 50%;
+  z-index: -1;
+  transition: all 0.3s;
+  background-color: rgb(28, 24, 40);
+  width: 0;
+  height: 0;
+}
+
+header .header_box .header_img .btn-box .btn-overlay .child-box-overlay .btn-overlay-box-2 {
+  position: absolute;
+  left: 50%;
+  z-index: 3;
+  transition: all 0.3s;
+  background-color: rgb(28, 24, 40);
+  width: 0;
+  height: 0;
+}
+
+.first_section .row .row .first_box {
+  width: 95%;
+  height: 285px;
+  box-shadow: 2px 2px 10px rgb(196, 196, 196);
+}
+
+.first_section .row .row .first_box i {
+  font-size: 35px;
+}
+
+.first_section .row .row .first_box .border_line {
+  width: 30%;
+  border-bottom: 2px solid rgb(196, 196, 196);
+}
+
+.first_section .row .row .first_box .first-button {
+  width: 80%;
+  height: 15%;
+  position: relative;
+}
+
+.first_section .row .row .first_box .first-button .button-1 {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(110, 129, 251);
+  color: white;
+  border-radius: 0;
+  transition: all 0.5s;
+  font-size: 12px;
+}
+
+.first_section .row .row .first_box .first-button .button-1:hover {
+  background-color: transparent;
+}
+
+.first_section .row .row .first_box .first-button .button-1:hover+.btn-overlay .child-box-overlay .btn-overlay-box-1,
+.first_section .row .row .first_box .first-button .button-1:hover+.btn-overlay .child-box-overlay .btn-overlay-box-2 {
+  height: 100%;
+  width: 50%;
+}
+
+.first_section .row .row .first_box .first-button .btn-overlay {
+  top: 0;
+  position: absolute;
+  z-index: -3;
+  width: 100%;
+  height: 100%;
+}
+
+.first_section .row .row .first_box .first-button .btn-overlay .child-box-overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  z-index: -2;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.first_section .row .row .first_box .first-button .btn-overlay .child-box-overlay .btn-overlay-box-1 {
+  position: absolute;
+  right: 50%;
+  z-index: -1;
+  transition: all 0.3s;
+  background-color: rgb(28, 24, 40);
+  width: 0;
+  height: 0;
+}
+
+.first_section .row .row .first_box .first-button .btn-overlay .child-box-overlay .btn-overlay-box-2 {
+  position: absolute;
+  left: 50%;
+  z-index: 3;
+  transition: all 0.3s;
+  background-color: rgb(28, 24, 40);
+  width: 0;
+  height: 0;
+}
+
+.first_section .row .row .first_box .box_about {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.second_section {
+  position: relative;
+  z-index: 1;
+  color: white;
+  background: url("images/pic-1.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.second_section .second_box {
+  width: 80%;
+  height: 100%;
+}
+
+.second_section .second_box .second_button .second-button-box-one {
+  width: 200px;
+  height: 50px;
+  position: relative;
+}
+
+.second_section .second_box .second_button .second-button-box-one .button-1 {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(110, 129, 251);
+  color: white;
+  border-radius: 0;
+  transition: all 0.5s;
+  font-size: 12px;
+}
+
+.second_section .second_box .second_button .second-button-box-one .button-1:hover {
+  background-color: transparent;
+}
+
+.second_section .second_box .second_button .second-button-box-one .button-1:hover+.btn-overlay .child-box-overlay .btn-overlay-box-1,
+.second_section .second_box .second_button .second-button-box-one .button-1:hover+.btn-overlay .child-box-overlay .btn-overlay-box-2 {
+  height: 100%;
+  width: 50%;
+}
+
+.second_section .second_box .second_button .second-button-box-one .btn-overlay {
+  top: 0;
+  position: absolute;
+  z-index: -3;
+  width: 100%;
+  height: 100%;
+}
+
+.second_section .second_box .second_button .second-button-box-one .btn-overlay .child-box-overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  z-index: -2;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.second_section .second_box .second_button .second-button-box-one .btn-overlay .child-box-overlay .btn-overlay-box-1 {
+  position: absolute;
+  right: 50%;
+  z-index: -1;
+  transition: all 0.3s;
+  background-color: rgb(28, 24, 40);
+  width: 0;
+  height: 0;
+}
+
+.second_section .second_box .second_button .second-button-box-one .btn-overlay .child-box-overlay .btn-overlay-box-2 {
+  position: absolute;
+  left: 50%;
+  z-index: 3;
+  transition: all 0.3s;
+  background-color: rgb(28, 24, 40);
+  width: 0;
+  height: 0;
+}
+
+.second_section .second_box .second_button .second-button-box-two {
+  width: 200px;
+  height: 50px;
+  position: relative;
+}
+
+.second_section .second_box .second_button .second-button-box-two .button-1 {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  color: white;
+  border-radius: 0;
+  transition: all 0.5s;
+  border: 2px solid white;
+}
+
+.second_section .second_box .second_button .second-button-box-two .button-1:hover {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.second_section .second_box .second_button .second-button-box-two .button-1:hover+.btn-overlay .child-box-overlay .btn-overlay-box-1,
+.second_section .second_box .second_button .second-button-box-two .button-1:hover+.btn-overlay .child-box-overlay .btn-overlay-box-2 {
+  height: 100%;
+  width: 50%;
+}
+
+.second_section .second_box .second_button .second-button-box-two .btn-overlay {
+  top: 0;
+  position: absolute;
+  z-index: -3;
+  width: 100%;
+  height: 100%;
+}
+
+.second_section .second_box .second_button .second-button-box-two .btn-overlay .child-box-overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  z-index: -2;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.second_section .second_box .second_button .second-button-box-two .btn-overlay .child-box-overlay .btn-overlay-box-1 {
+  position: absolute;
+  right: 50%;
+  z-index: -1;
+  transition: all 0.3s;
+  background-color: rgb(110, 129, 251);
+  width: 0;
+  height: 0;
+}
+
+.second_section .second_box .second_button .second-button-box-two .btn-overlay .child-box-overlay .btn-overlay-box-2 {
+  position: absolute;
+  left: 50%;
+  z-index: -1;
+  transition: all 0.3s;
+  background-color: rgb(110, 129, 251);
+  width: 0;
+  height: 0;
+}
+
+.third_section .third_box h6 {
+  line-height: 25px;
+}
+
+.fourth_section .row {
+  border-top: 1px solid rgb(177, 177, 177);
+}
+
+.fourth_section .row .nav .nav-item .nav-link {
+  color: rgb(73, 76, 81) !important;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.fourth_section .row .nav .nav-item .nav-link:hover {
+  color: rgb(110, 129, 251) !important;
+}
+
+.fifth_section .row .fifth_box {
+  position: relative;
+  overflow: hidden;
+}
+
+.fifth_section .row .fifth_box .fifth_img_box {
+  height: 100%;
+  width: 100%;
+}
+
+.fifth_section .row .fifth_box .fifth_img_box .fifth_img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.fifth_section .row .fifth_box .fifth_about_box {
+  background-color: white;
+  height: 85%;
+  width: 85%;
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  transition: all 1s;
+}
+
+.fifth_section .row .fifth_box .fifth_about_box span i {
+  font-size: 35px;
+}
+
+.fifth_section .row .fifth_box .fifth_about_box .h5 {
+  color: rgb(110, 129, 251);
+}
+
+.fifth_section .row .fifth_box:hover .fifth_about_box {
+  top: 10%;
+  left: 9%;
+}
+
+.six_section .row .six_box2 .h3 {
+  border-left: 3px solid rgb(155, 155, 155);
+}
+
+.six_section .row .six_box2 .h6 {
+  color: rgb(73, 76, 81);
+  line-height: 23px;
+}
+
+.six_section .row .six_box2 .six-box {
+  width: 180px;
+  height: 45px;
+  position: relative;
+}
+
+.six_section .row .six_box2 .six-box .button-1 {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(110, 129, 251);
+  color: white;
+  border-radius: 0;
+  transition: all 0.5s;
+  font-size: 12px;
+}
+
+.six_section .row .six_box2 .six-box .button-1:hover {
+  background-color: transparent;
+}
+
+.six_section .row .six_box2 .six-box .button-1:hover+.btn-overlay .child-box-overlay .btn-overlay-box-1,
+.six_section .row .six_box2 .six-box .button-1:hover+.btn-overlay .child-box-overlay .btn-overlay-box-2 {
+  height: 100%;
+  width: 50%;
+}
+
+.six_section .row .six_box2 .six-box .btn-overlay {
+  top: 0;
+  position: absolute;
+  z-index: -3;
+  width: 100%;
+  height: 100%;
+}
+
+.six_section .row .six_box2 .six-box .btn-overlay .child-box-overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  z-index: -2;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.six_section .row .six_box2 .six-box .btn-overlay .child-box-overlay .btn-overlay-box-1 {
+  position: absolute;
+  right: 50%;
+  z-index: -1;
+  transition: all 0.3s;
+  background-color: rgb(28, 24, 40);
+  width: 0;
+  height: 0;
+}
+
+.six_section .row .six_box2 .six-box .btn-overlay .child-box-overlay .btn-overlay-box-2 {
+  position: absolute;
+  left: 50%;
+  z-index: 3;
+  transition: all 0.3s;
+  background-color: rgb(28, 24, 40);
+  width: 0;
+  height: 0;
+}
+
+.seven_section .row .seven_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.seven_section .row .seven_box .seven_box_child {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(247, 247, 247);
+  transition: all 0.3s;
+  width: 100%;
+  height: 100%;
+}
+
+.seven_section .row .seven_box:hover .seven_box_child {
+  border-color: black;
+  width: 90%;
+  height: 85%;
+}
+
+.eight_section .row .eght_box .nav {
+  border-width: 2px !important;
+}
+
+.eight_section .row .eght_box .nav .nav-item a {
+  color: rgb(110, 110, 110);
+  border-bottom: 2px solid transparent;
+  margin: 0;
+}
+
+.eight_section .row .eght_box .nav .nav-item a:hover {
+  color: rgb(110, 129, 251) !important;
+  border-bottom-color: rgb(110, 129, 251);
+}
+
+.eight_section .row .eght_box .eight_button .eight_box_one {
+  width: 150px;
+  height: 40px;
+  position: relative;
+}
+
+.eight_section .row .eght_box .eight_button .eight_box_one .button-1 {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(110, 129, 251);
+  color: white;
+  border-radius: 0;
+  transition: all 0.5s;
+  font-size: 12px;
+}
+
+.eight_section .row .eght_box .eight_button .eight_box_one .button-1:hover {
+  background-color: transparent;
+}
+
+.eight_section .row .eght_box .eight_button .eight_box_one .button-1:hover+.btn-overlay .child-box-overlay .btn-overlay-box-1,
+.eight_section .row .eght_box .eight_button .eight_box_one .button-1:hover+.btn-overlay .child-box-overlay .btn-overlay-box-2 {
+  height: 100%;
+  width: 50%;
+}
+
+.eight_section .row .eght_box .eight_button .eight_box_one .btn-overlay {
+  top: 0;
+  position: absolute;
+  z-index: -3;
+  width: 100%;
+  height: 100%;
+}
+
+.eight_section .row .eght_box .eight_button .eight_box_one .btn-overlay .child-box-overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  z-index: -2;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.eight_section .row .eght_box .eight_button .eight_box_one .btn-overlay .child-box-overlay .btn-overlay-box-1 {
+  position: absolute;
+  right: 50%;
+  z-index: -1;
+  transition: all 0.3s;
+  background-color: rgb(28, 24, 40);
+  width: 0;
+  height: 0;
+}
+
+.eight_section .row .eght_box .eight_button .eight_box_one .btn-overlay .child-box-overlay .btn-overlay-box-2 {
+  position: absolute;
+  left: 50%;
+  z-index: 3;
+  transition: all 0.3s;
+  background-color: rgb(28, 24, 40);
+  width: 0;
+  height: 0;
+}
+
+.eight_section .row .eght_box .eight_button .eight_box_two {
+  width: 150px;
+  height: 40px;
+  position: relative;
+}
+
+.eight_section .row .eght_box .eight_button .eight_box_two .button-1 {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  transition: all 0.5s;
+  border: 2px solid black;
+}
+
+.eight_section .row .eght_box .eight_button .eight_box_two .button-1:hover {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.eight_section .row .eght_box .eight_button .eight_box_two .button-1:hover+.btn-overlay .child-box-overlay .btn-overlay-box-1,
+.eight_section .row .eght_box .eight_button .eight_box_two .button-1:hover+.btn-overlay .child-box-overlay .btn-overlay-box-2 {
+  height: 100%;
+  width: 50%;
+}
+
+.eight_section .row .eght_box .eight_button .eight_box_two .btn-overlay {
+  top: 0;
+  position: absolute;
+  z-index: -3;
+  width: 100%;
+  height: 100%;
+}
+
+.eight_section .row .eght_box .eight_button .eight_box_two .btn-overlay .child-box-overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  z-index: -2;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.eight_section .row .eght_box .eight_button .eight_box_two .btn-overlay .child-box-overlay .btn-overlay-box-1 {
+  position: absolute;
+  right: 50%;
+  z-index: -1;
+  transition: all 0.3s;
+  background-color: rgb(110, 129, 251);
+  width: 0;
+  height: 0;
+}
+
+.eight_section .row .eght_box .eight_button .eight_box_two .btn-overlay .child-box-overlay .btn-overlay-box-2 {
+  position: absolute;
+  left: 50%;
+  z-index: -1;
+  transition: all 0.3s;
+  background-color: rgb(110, 129, 251);
+  width: 0;
+  height: 0;
+}
+
+.eight_section .row .eight_img {
+  position: relative;
+  z-index: -1;
+}
+
+.eight_section .row .eight_img .img_two {
+  position: absolute;
+  left: 78%;
+  width: 75%;
+  height: 100%;
+  z-index: -2;
+}
+
+.nine_section .del1 {
+  font-size: 50px;
+  color: rgba(128, 128, 128, 0.1);
+}
+
+.nine_section .card-main1 {
+  background-color: rgb(141, 141, 141);
+  color: white;
+}
+
+.nine_section .nine_box {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.nine_section .card1 {
+  background-color: black;
+}
+
+.nine_section .concept {
+  color: rgba(128, 128, 128, 0.7);
+}
+
+.nine_section .card-main2 {
+  border-radius: 20px 20px 30px 30px;
+}
+
+.nine_section .card-main1 {
+  border-radius: 0px 0px 10px 10px;
+}
+
+.nine_section .icon1 {
+  color: rgb(110, 129, 251);
+}
+
+.nine_section .btn-nine {
+  background-color: rgb(110, 129, 251);
+}
+
+.nine_section .btn-nine:hover {
+  background-color: black;
+}
+
+.nine_section .card-main1:hover {
+  background-color: black;
+  color: white;
+}
+
+.eleven_section .eleven_box .cal_button .btn {
+  background-color: rgb(110, 129, 251) !important;
+  border: 3px solid white !important;
+  outline: 0.2px solid rgb(224, 224, 224);
+  border-radius: 13px;
+  font-size: 35px;
+}
+
+.eleven_section .eleven_box .cal_button .result {
+  background-color: rgb(73, 76, 81);
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.eleven_section .eleven_box .cal_button .result #result {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 20px;
+  font-size: 39px;
+  font-weight: 600;
+  border: none;
+  background-color: rgb(110, 129, 251);
+  border-radius: 15px;
+  text-align: end;
+}
+
+.eleven_section .eleven_box .cal_button .result #result::-moz-placeholder {
+  color: white;
+}
+
+.eleven_section .eleven_box .cal_button .result #result::placeholder {
+  color: white;
+}
+
+.eleven_section .eleven_box .calculator {
+  width: 300px;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 15px;
+}
+
+.eleven_section .eleven_box #show_value {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 35px;
+  font-size: 32px;
+  font-weight: 600;
+  border: none;
+  background-color: rgb(110, 129, 251);
+  border-radius: 15px 15px 0px 0px;
+  text-align: end;
+}
+
+.eleven_section .eleven_box .buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.eleven_section .eleven_box button {
+  width: 50px;
+  height: 50px;
+  padding: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  border: 1px solid #f0eeee;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.twelve_section .twelve_box form .row input::-moz-placeholder {
+  color: rgb(79, 79, 79);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.twelve_section .twelve_box form .row input::placeholder {
+  color: rgb(79, 79, 79);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.twelve_section .twelve_box form .message_box textarea::-moz-placeholder {
+  color: rgb(79, 79, 79);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.twelve_section .twelve_box form .message_box textarea::placeholder {
+  color: rgb(79, 79, 79);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.twelve_section .twelve_box form .form-box {
+  width: 200px;
+  height: 45px;
+  position: relative;
+}
+
+.twelve_section .twelve_box form .form-box .button-1 {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(110, 129, 251);
+  color: white;
+  border-radius: 0;
+  transition: all 0.5s;
+  font-size: 12px;
+}
+
+.twelve_section .twelve_box form .form-box .button-1:hover {
+  background-color: transparent;
+}
+
+.twelve_section .twelve_box form .form-box .button-1:hover+.btn-overlay .child-box-overlay .btn-overlay-box-1,
+.twelve_section .twelve_box form .form-box .button-1:hover+.btn-overlay .child-box-overlay .btn-overlay-box-2 {
+  height: 100%;
+  width: 50%;
+}
+
+.twelve_section .twelve_box form .form-box .btn-overlay {
+  top: 0;
+  position: absolute;
+  z-index: -3;
+  width: 100%;
+  height: 100%;
+}
+
+.twelve_section .twelve_box form .form-box .btn-overlay .child-box-overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  z-index: -2;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.twelve_section .twelve_box form .form-box .btn-overlay .child-box-overlay .btn-overlay-box-1 {
+  position: absolute;
+  right: 50%;
+  z-index: -1;
+  transition: all 0.3s;
+  background-color: rgb(28, 24, 40);
+  width: 0;
+  height: 0;
+}
+
+.twelve_section .twelve_box form .form-box .btn-overlay .child-box-overlay .btn-overlay-box-2 {
+  position: absolute;
+  left: 50%;
+  z-index: 3;
+  transition: all 0.3s;
+  background-color: rgb(28, 24, 40);
+  width: 0;
+  height: 0;
+}
+
+.ten_section .ten_boxes .ten_box i {
+  font-size: 45px;
+  color: rgb(110, 129, 251);
+}
+
+.ten_section .ten_boxes .ten_box .ten_border {
+  width: 0px;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+}
+
+.ten_section .ten_boxes .ten_box:hover .ten_border {
+  width: 70px;
+  border: 1px solid rgb(110, 129, 251);
+}
+
+footer .footer .footer_box h6 a {
+  color: rgb(236, 237, 239);
+  font-size: 14px;
+  transition: all 1s;
+}
+
+footer .footer .footer_box h6 a:hover {
+  color: rgb(110, 129, 251);
+}
+
+footer .footer_icon i:hover {
+  color: rgb(110, 129, 251);
+}
